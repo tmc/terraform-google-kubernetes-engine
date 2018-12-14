@@ -153,7 +153,7 @@ Then perform the following commands on the root folder:
 | type | Cluster type (regional / zonal) |
 | zones | List of zones in which the cluster resides |
 
-[^]: (autogen_docs_end)
+[^]: (autogen_docs_end
 
 ## Requirements
 
