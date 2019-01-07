@@ -4,7 +4,6 @@ This example illustrates how to create a simple cluster where the host network i
 
 [^]: (autogen_docs_start)
 
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |

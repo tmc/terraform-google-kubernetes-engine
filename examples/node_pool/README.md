@@ -4,7 +4,6 @@ This example illustrates how to create a cluster with multiple custom node-pool 
 
 [^]: (autogen_docs_start)
 
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -15,7 +14,7 @@ This example illustrates how to create a cluster with multiple custom node-pool 
 | ip_range_pods | The secondary ip range to use for pods | string | - | yes |
 | ip_range_services | The secondary ip range to use for pods | string | - | yes |
 | network | The VPC network to host the cluster in | string | - | yes |
-| project_id | The project ID to host the cluster in | string | - | yes |
+| project\_id | The project ID to host the cluster in | string | - | yes |
 | region | The region to host the cluster in | string | - | yes |
 | subnetwork | The subnetwork to host the cluster in | string | - | yes |
 
@@ -23,19 +22,19 @@ This example illustrates how to create a cluster with multiple custom node-pool 
 
 | Name | Description |
 |------|-------------|
-| ca_certificate |  |
-| client_token |  |
-| cluster_name | Cluster name |
-| credentials_path |  |
-| ip_range_pods | The secondary IP range used for pods |
-| ip_range_services | The secondary IP range used for services |
-| kubernetes_endpoint |  |
-| location |  |
-| master_kubernetes_version | The master Kubernetes version |
-| network |  |
-| project_id |  |
-| region |  |
-| subnetwork |  |
+| ca\_certificate | - |
+| client\_token | - |
+| cluster\_name | Cluster name |
+| credentials\_path | - |
+| ip\_range\_pods | The secondary IP range used for pods |
+| ip\_range\_services | The secondary IP range used for services |
+| kubernetes\_endpoint | - |
+| location | - |
+| master\_kubernetes\_version | The master Kubernetes version |
+| network | - |
+| project\_id | - |
+| region | - |
+| subnetwork | - |
 | zones | List of zones in which the cluster resides |
 
 [^]: (autogen_docs_end)
