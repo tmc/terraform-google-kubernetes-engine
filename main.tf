@@ -152,7 +152,12 @@ locals {
   Get available container engine versions
  *****************************************/
 data "google_container_engine_versions" "region" {
+<<<<<<< HEAD
   provider = "google"
   zone     = "${data.google_compute_zones.available.names[0]}"
   project  = "${var.project_id}"
+=======
+  zone    = "${data.google_compute_zones.available.names[0]}"
+  project = "${var.project_id}"
+>>>>>>> adding master_auth to autogen
 }
