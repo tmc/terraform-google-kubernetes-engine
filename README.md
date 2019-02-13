@@ -1,6 +1,6 @@
 # Terraform Kubernetes Engine Module
 
-This module handles opinionated Google Cloud Platform Kubernetes Engine cluster creation and configuration with Node Pools, IP MASQ, Network Policy, etc.
+This module handles opinionated Google Cloud Platform Kubernetes Engine cluster creation and configuration with Node Pools, IP MASQ, Network Policy, etc. 
 The resources/services/activations/deletions that this module will create/trigger are:
 - Create a GKE cluster with the provided addons
 - Create GKE Node Pool(s) with provided configuration and attach to cluster
@@ -115,23 +115,6 @@ Then perform the following commands on the root folder:
 | monitoring\_service | The monitoring service that the cluster should write metrics to. Automatically send metrics from pods in the cluster to the Google Cloud Monitoring API. VM metrics will be collected by Google Compute Engine regardless of this setting Available options include monitoring.googleapis.com, monitoring.googleapis.com/kubernetes (beta) and none | string | `monitoring.googleapis.com` | no |
 | name | The name of the cluster (required) | string | - | yes |
 | network | The VPC network to host the cluster in (required) | string | - | yes |
-<<<<<<< HEAD
-| network_policy | Enable network policy addon | string | `false` | no |
-| network_project_id | The project ID of the shared VPC's host (for shared vpc support) | string | `` | no |
-| node_pools | List of maps containing node pools | list | `<list>` | no |
-| node_pools_labels | Map of maps containing node labels by node-pool name | map | `<map>` | no |
-| node_pools_metadata | Map of maps containing node metadata by node-pool name | map | `<map>` | no |
-| node_pools_tags | Map of lists containing node network tags by node-pool name | map | `<map>` | no |
-| node_pools_taints | Map of lists containing node taints by node-pool name | map | `<map>` | no |
-| node_version | The Kubernetes version of the node pools. Defaults kubernetes_version (master) variable and can be overridden for individual node pools by setting the `version` key on them. Must be empyty or set the same as master at cluster creation. | string | `` | no |
-| non_masquerade_cidrs | List of strings in CIDR notation that specify the IP address ranges that do not use IP masquerading. | list | `<list>` | no |
-| project_id | The project ID to host the cluster in (required) | string | - | yes |
-| region | The region to host the cluster in (required) | string | - | yes |
-| regional | Whether is a regional cluster (zonal cluster if set false. WARNING: changing this after cluster creation is destructive!) | string | `true` | no |
-| remove_default_node_pool | Remove default node pool while setting up the cluster | string | `false` | no |
-| service_account | The service account to default running nodes as if not overridden in `node_pools`. Defaults to the compute engine default service account | string | `` | no |
-| stub_domains | Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server | map | `<map>` | no |
-=======
 | network\_policy | Enable network policy addon | string | `false` | no |
 | network\_project\_id | The project ID of the shared VPC's host (for shared vpc support) | string | `` | no |
 | node\_pools | List of maps containing node pools | list | `<list>` | no |
@@ -147,7 +130,6 @@ Then perform the following commands on the root folder:
 | remove\_default\_node\_pool | Remove default node pool while setting up the cluster | string | `false` | no |
 | service\_account | The service account to default running nodes as if not overridden in `node_pools`. Defaults to the compute engine default service account | string | `` | no |
 | stub\_domains | Map of stub domains and their resolvers to forward DNS queries for a certain domain to an external DNS server | map | `<map>` | no |
->>>>>>> regenerating docs
 | subnetwork | The subnetwork to host the cluster in (required) | string | - | yes |
 | zones | The zones to host the cluster in (optional if regional cluster / required if zonal) | list | `<list>` | no |
 

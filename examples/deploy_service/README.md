@@ -14,11 +14,11 @@ It will:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| cluster_name_suffix | A suffix to append to the default cluster name | string | `` | no |
-| compute_engine_service_account | Service account to associate to the nodes in the cluster | string | - | yes |
-| credentials_path | The path to the GCP credentials JSON file | string | - | yes |
-| ip_range_pods | The secondary ip range to use for pods | string | - | yes |
-| ip_range_services | The secondary ip range to use for pods | string | - | yes |
+| cluster\_name\_suffix | A suffix to append to the default cluster name | string | `` | no |
+| compute\_engine\_service\_account | Service account to associate to the nodes in the cluster | string | - | yes |
+| credentials\_path | The path to the GCP credentials JSON file | string | - | yes |
+| ip\_range\_pods | The secondary ip range to use for pods | string | - | yes |
+| ip\_range\_services | The secondary ip range to use for pods | string | - | yes |
 | network | The VPC network to host the cluster in | string | - | yes |
 | project\_id | The project ID to host the cluster in | string | - | yes |
 | region | The region to host the cluster in | string | - | yes |
