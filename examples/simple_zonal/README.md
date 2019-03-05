@@ -10,7 +10,6 @@ This example illustrates how to create a simple cluster.
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cluster_name_suffix | A suffix to append to the default cluster name | string | `` | no |
-| credentials_path | The path to the GCP credentials JSON file | string | - | yes |
 | ip_range_pods | The secondary ip range to use for pods | string | - | yes |
 | ip_range_services | The secondary ip range to use for pods | string | - | yes |
 | network | The VPC network to host the cluster in | string | - | yes |
@@ -26,7 +25,6 @@ This example illustrates how to create a simple cluster.
 | ca_certificate |  |
 | client_token |  |
 | cluster_name | Cluster name |
-| credentials_path |  |
 | ip_range_pods | The secondary IP range used for pods |
 | ip_range_services | The secondary IP range used for services |
 | kubernetes_endpoint |  |

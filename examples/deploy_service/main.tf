@@ -19,7 +19,6 @@ locals {
 }
 
 provider "google" {
-  credentials = "${file(var.credentials_path)}"
   region      = "${var.region}"
   version     = "~> 1.20"
 }
