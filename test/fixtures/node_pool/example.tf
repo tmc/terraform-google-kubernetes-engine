@@ -20,6 +20,7 @@ module "example" {
   project_id                     = "${var.project_id}"
   cluster_name_suffix            = "-${random_string.suffix.result}"
   region                         = "${var.region}"
+  zones                          = ["${slice(var.zones,0,1)}"]
   network                        = "${google_compute_network.main.name}"
   subnetwork                     = "${google_compute_subnetwork.main.name}"
   ip_range_pods                  = "${google_compute_subnetwork.main.secondary_ip_range.0.range_name}"
