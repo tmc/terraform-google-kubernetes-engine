@@ -108,6 +108,11 @@ locals {
     zonal    = "${element(concat(google_container_cluster.zonal_primary.*.addons_config.0.horizontal_pod_autoscaling.0.disabled, list("")), 0)}"
   }
 
+  cluster_type_output_istio_enabled = {
+    regional = "${element(concat(google_container_cluster.primary.*.addons_config.0.istio_config.0.disabled, list("")), 0)}"
+    zonal    = "${element(concat(google_container_cluster.zonal_primary.*.addons_config.0.istio_config.0.disabled, list("")), 0)}"
+  }
+
   cluster_type_output_kubernetes_dashboard_enabled = {
     regional = "${element(concat(google_container_cluster.primary.*.addons_config.0.kubernetes_dashboard.0.disabled, list("")), 0)}"
     zonal    = "${element(concat(google_container_cluster.zonal_primary.*.addons_config.0.kubernetes_dashboard.0.disabled, list("")), 0)}"

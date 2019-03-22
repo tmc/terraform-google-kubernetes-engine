@@ -82,7 +82,7 @@ generate_docs:
 
 .PHONY: generate
 generate:
-	@pip install --user -r ./helpers/generate_modules/requirements.txt
+	@pip install -r ./helpers/generate_modules/requirements.txt
 	@./helpers/generate_modules/generate_modules.py
 
 # Versioning

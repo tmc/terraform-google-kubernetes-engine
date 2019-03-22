@@ -47,6 +47,10 @@ resource "google_container_cluster" "primary" {
       disabled = "${var.horizontal_pod_autoscaling ? 0 : 1}"
     }
 
+    istio_config {
+      disabled = "${var.istio_config ? 0 : 1}"
+    }
+
     kubernetes_dashboard {
       disabled = "${var.kubernetes_dashboard ? 0 : 1}"
     }
