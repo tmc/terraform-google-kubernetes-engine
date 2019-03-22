@@ -96,6 +96,11 @@ variable "http_load_balancing" {
   default     = true
 }
 
+variable "istio_config" {
+  description = "Enable Istio addon"
+  default     = false
+}
+
 variable "kubernetes_dashboard" {
   description = "Enable kubernetes dashboard addon"
   default     = false
